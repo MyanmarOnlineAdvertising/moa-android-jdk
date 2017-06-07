@@ -57,6 +57,17 @@ https://moa.com.mm/register
       }
     });
   ```  
+  
+  # MoaAdsView with RecyclerView
+  You can aslo used MoaAdsView with the RecyclerView as the following , 
+  ```java
+  PeopleAdapter mPeopleAdapter = new PeopleAdapter();
+    mPeopleAdapter.setItems(mList);
+    MoaAdsAdapter moaAdsAdapter =
+        new MoaAdsAdapter(mPeopleAdapter, this, "aid_xxxxxxxxx");
+    mRecyclerView.setAdapter(moaAdsAdapter);
+    ```
+  adsUnitId need to replace with Ads Unit ID at your publisher project at www.moa.com.mm
+  There was not support fullscreen ads type with Recyclerview adapter
 
-
-
+  
