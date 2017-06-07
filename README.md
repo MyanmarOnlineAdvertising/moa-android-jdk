@@ -1,26 +1,26 @@
-# Moa-Android-Sdk
+# MOA-Android-Sdk
 MOA Android SDK to tap into MOA Ad Network.
 
-#Register at Myanmar Online Advertising as Publisher
+# Register at Myanmar Online Advertising as Publisher to get the ad unit code
 https://moa.com.mm/register
 
-# How to Add libiary
+# How to Add library
 1. Download [moaadssdk.arr](https://github.com/MyanmarOnlineAdvertising/moa-android-jdk/releases/download/v0.1/moaadssdk.aar)
- and place under the libs folder
-2. add following code to Project build.gradle file
+ and place it under the libs folder
+2. add the following code to project build.gradle file
   ```groovy
     flatDir {
       dirs 'libs'
     }
    ```
-3. add the following code in Application build.gradle and Synce with gradle
+3. add the following code in Application build.gradle and sync with gradle
   ```groovy
    compile(name: 'moaadssdk', ext: 'aar')
    compile 'com.squareup.moshi:moshi:1.5.0'
    compile 'com.squareup.okhttp3:okhttp:3.8.0'
    ```
-# Usage for BannerAds and FullScreen Ads
- adsUnitId need to replace with Ads Unit ID at your publisher project at www.moa.com.mm
+# Usage for Banner Ads and FullScreen Ads
+ adsUnitId need to replace with Ads Unit ID from your publisher project at www.moa.com.mm
  
   ```xml
    <com.zeta.moaadssdk.Views.MoaAdsView
@@ -33,19 +33,23 @@ https://moa.com.mm/register
         app:adsUnitId="aid_xxxxxxxxxxxxxx"
     />
    ```
-   Fullscreen Ads can be used as the following:
+   
+   Fullscreen Ads can be implemented as the following:
    adsUnitId need to replace with FullScreen Ads Unit ID 
-   at your publisher project at www.moa.com.mm
+   from your publisher project at www.moa.com.mm
+   
    ```java
       int showPerTime =2;
       MoaAds moaAds = new MoaAds(this);
       moaAds.initFullScreenAds(showPerTime, "fid_xxxxxxxxxxxxx");
    ```
-  with the above example FullScreen will be show at every two time when user reahced
+   
+  with the above example Fullscreen ad will be shown whenever user enters the app the second time.
   
-  # Ads Listener for MoaAdsView
-  You aslo can handle Ads request success and fails with MoaAdListener  as the following
-  int code is Http Status code, when error happen will return 400 and when limit ads will return 204
+  # Ads Listeners for MoaAdsView
+  You can also listen to Ads request status with MoaAdListener as the following
+  `int code` is Http Status code, 400 means error and 204 means rate limited.
+  
   ```java
   moaAdsView.addAdsListener(new MoaAdsView.MoaAdListener() {
       @Override public void onAdsLoaded(int code) {
@@ -53,22 +57,30 @@ https://moa.com.mm/register
       }
 
       @Override public void onAdsFailed(int code) {
-               //create your own logic
+        //create your own logic
       }
     });
   ```  
   
   # MoaAdsView with RecyclerView
-  You can aslo used MoaAdsView with the RecyclerView as the following , 
+  You can also use MoaAdsView with the RecyclerView as the following,
+  
   ```java
     PeopleAdapter mPeopleAdapter = new PeopleAdapter();
     mPeopleAdapter.setItems(mList);
-    MoaAdsAdapter moaAdsAdapter =
-        new MoaAdsAdapter(mPeopleAdapter, this, "aid_xxxxxxxxx");
+    MoaAdsAdapter moaAdsAdapter = new MoaAdsAdapter(mPeopleAdapter, this, "aid_xxxxxxxxx");
     mRecyclerView.setAdapter(moaAdsAdapter);
   ```
-  adsUnitId need to replace with Ads Unit ID at your publisher project at www.moa.com.mm
-  There was not support fullscreen ads type with Recyclerview adapter
+  
+  adsUnitId needs to replace with Ads Unit ID from your publisher project at www.moa.com.mm
 
-  # Example Project
+  # Example Projects
   [MoaAds Example](https://github.com/MyanmarOnlineAdvertising/moa-android-examples/tree/master/moa-android-sdk)
+  
+  
+  # Help
+  
+  [Contact us](https://www.moa.com.mm/about) if you have any difficulties implementing our ad jdk.
+  
+  
+  # MOA - The ad network that helps you earn more while you focus on creating better contents.
