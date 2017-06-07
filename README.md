@@ -34,12 +34,14 @@ https://moa.com.mm/register
     />
    ```
    Fullscreen Ads can be used as the following:
-   adsUnitId need to replace with FullScreen Ads Unit ID at your publisher project at www.moa.com.mm
-   with the Following code FullScreen will be show at every two time when user reahced
+   adsUnitId need to replace with FullScreen Ads Unit ID 
+   at your publisher project at www.moa.com.mm
    ```java
       int showPerTime =2;
       MoaAds moaAds = new MoaAds(this);
       moaAds.initFullScreenAds(showPerTime, "fid_xxxxxxxxxxxxx");
    ```
+  with the above example FullScreen will be show at every two time when user reahced
+
 
 
