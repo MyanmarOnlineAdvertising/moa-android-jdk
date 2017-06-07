@@ -5,7 +5,8 @@ MOA Android SDK to tap into MOA Ad Network.
 https://moa.com.mm/register
 
 # How to Add libiary
-1. Download moaadssdk.arr and place under the libs folder
+1. Download [moaadssdk.arr](https://github.com/MyanmarOnlineAdvertising/moa-android-jdk/releases/download/v0.1/moaadssdk.aar)
+ and place under the libs folder
 2. add following code to Project build.gradle file
   ```groovy
     flatDir {
