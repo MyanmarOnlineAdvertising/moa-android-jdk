@@ -20,7 +20,7 @@ https://moa.com.mm/register
    ```
 # Usage for BannerAds and FullScreen Ads
  adsUnitId need to replace with Ads Unit ID at your publisher project at www.moa.com.mm
- ======================================================================================
+ 
   ```xml
    <com.zeta.moaadssdk.Views.MoaAdsView
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -33,7 +33,6 @@ https://moa.com.mm/register
     />
    ```
    Fullscreen Ads can be used as the following:
-   ============================================
    adsUnitId need to replace with FullScreen Ads Unit ID at your publisher project at www.moa.com.mm
    ```java
       MoaAds moaAds = new MoaAds(this);
