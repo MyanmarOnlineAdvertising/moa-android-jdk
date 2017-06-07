@@ -1,6 +1,8 @@
 # moa-android-sdk
 MOA Android SDK to tap into MOA Ad Network.
 
+#Register at Myanmar Online Advertising as Publisher
+https://moa.com.mm/register
 
 # How to Add libiary
 1. Download moaadssdk.arr and place under the libs folder
