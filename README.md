@@ -42,6 +42,21 @@ https://moa.com.mm/register
       moaAds.initFullScreenAds(showPerTime, "fid_xxxxxxxxxxxxx");
    ```
   with the above example FullScreen will be show at every two time when user reahced
+  
+  # Ads Listener for MoaAdsView
+  You aslo can handle Ads request success and fails with MoaAdListener  as the following
+  int code is Http Status code, when error happen will return 400 and when limit ads will return 204
+  ```java
+  moaAdsView.addAdsListener(new MoaAdsView.MoaAdListener() {
+      @Override public void onAdsLoaded(int code) {
+        //create your own logic
+      }
+
+      @Override public void onAdsFailed(int code) {
+               //create your own logic
+      }
+    });
+  ```  
 
 
 
