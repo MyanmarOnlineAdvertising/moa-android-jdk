@@ -70,4 +70,5 @@ https://moa.com.mm/register
   adsUnitId need to replace with Ads Unit ID at your publisher project at www.moa.com.mm
   There was not support fullscreen ads type with Recyclerview adapter
 
-  
+  # Example Project
+  [MoaAds Example](https://github.com/MyanmarOnlineAdvertising/moa-android-examples/tree/master/moa-android-sdk)
