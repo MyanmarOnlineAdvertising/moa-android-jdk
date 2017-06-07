@@ -18,4 +18,14 @@ https://moa.com.mm/register
    compile 'com.squareup.moshi:moshi:1.5.0'
    compile 'com.squareup.okhttp3:okhttp:3.8.0'
    ```
+# Usage 
+   <com.zeta.moaadssdk.Views.MoaAdsView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/moa_ads_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        app:adsUnitId="aid_e03921a525b7511198f3b05fd9444112"
+    />
 
