@@ -1,4 +1,4 @@
-# moa-android-sdk
+# Moa-Android-Sdk
 MOA Android SDK to tap into MOA Ad Network.
 
 #Register at Myanmar Online Advertising as Publisher
