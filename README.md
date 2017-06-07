@@ -18,8 +18,9 @@ https://moa.com.mm/register
    compile 'com.squareup.moshi:moshi:1.5.0'
    compile 'com.squareup.okhttp3:okhttp:3.8.0'
    ```
-# Usage for BannerAds
+# Usage for BannerAds and FullScreen Ads
  adsUnitId need to replace with Ads Unit ID at your publisher project at www.moa.com.mm
+ ======================================================================================
   ```xml
    <com.zeta.moaadssdk.Views.MoaAdsView
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -31,4 +32,12 @@ https://moa.com.mm/register
         app:adsUnitId="aid_xxxxxxxxxxxxxx"
     />
    ```
+   Fullscreen Ads can be used as the following:
+   ============================================
+   adsUnitId need to replace with FullScreen Ads Unit ID at your publisher project at www.moa.com.mm
+   ```java
+      MoaAds moaAds = new MoaAds(this);
+      moaAds.initFullScreenAds(3, "fid_xxxxxxxxxxxxx");
+   ```
+
 
