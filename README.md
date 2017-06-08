@@ -80,7 +80,9 @@ https://moa.com.mm/register
   
   # Help
   
-  [Contact us](https://www.moa.com.mm/about) if you have any difficulties implementing our ad jdk.
+  Report a bug by creating an issue on our github repo.
+  
+  Also [contact us](https://www.moa.com.mm/about) if you have any difficulties implementing our ad jdk.
   
   
   # MOA - The ad network that helps you earn more while you focus on creating better contents.
